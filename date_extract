@@ -1,0 +1,14 @@
+from date_extractor import extract_dates
+import datefinder
+text = """
+"""
+dates = extract_dates(text)
+print(dates)
+for date in dates:
+    if(int(date.strftime('%Y')))>=2010 :
+    #print(date.strftime('%Y'))
+        print(date.strftime('%b/%d/%Y'))
+
+# matches = datefinder.find_dates(text)
+# for match in matches:
+#     print (match)
